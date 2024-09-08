@@ -368,7 +368,7 @@ footer p {
 
 @media screen and (max-width:950px) {
     .navbar-container {
-        flex-direction: column;
+        flex-direction: row;
     }
 
 }
@@ -376,10 +376,13 @@ footer p {
 
 @media screen and (max-width:950px) {
     .navbar-container {
-        flex-direction: column;
-        align-items: stretch;
+        flex-direction: row;
+        align-items: center;
     }
 
+    ul .x {
+        display: none;
+    }
 }
 
 
@@ -408,6 +411,12 @@ footer p {
     font-size: 0.8rem;
     font-weight: 500;
     }
+
+    nav li a {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
 
 }
 
@@ -838,6 +847,10 @@ figure .line-2 {
     #section-4 h1 {
         font-size: 2rem;
     }
+
+    .navbar-container .logo img {
+        width: 200px;
+    }
 }
 
 
@@ -876,13 +889,11 @@ figure .line-2 {
     .box-1 {
         margin-bottom: 20px;
     }
+
 }   
 
 
 @media screen and (max-width:430px) {
-    #section-4 div figure img {
-    width: 200px;
-    }
 
      .caption h2 {
         font-size: 1.3rem;
@@ -890,6 +901,10 @@ figure .line-2 {
 
     .caption h4 {
         font-size: 0.8rem;
+    }
+
+    nav li a {
+        font-size: 0.9rem;
     }
 }
 
@@ -920,5 +935,26 @@ figure .line-2 {
 
     #section-4 h1 {
         font-size: 1.7rem;
+    }
+
+    nav li a {
+        font-size: 0.9rem;
+    }
+
+    .navbar-container .logo img {
+    width: 180px;
+    }
+}
+
+
+@media screen and (max-width:377px) {
+    .navbar-container .logo img{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width:352px) {
+    .navbar-container .logo img{
+        width: 120px;
     }
 }
