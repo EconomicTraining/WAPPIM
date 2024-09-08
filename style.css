@@ -1,0 +1,899 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+
+    margin: 0;
+
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+
+/* HEADER & NAVIGATION */
+
+header {
+    display: inline;
+}
+
+.hero {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+
+.hero img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 0;
+    padding: 0;
+    border: none;
+    margin-bottom: -1px;
+}
+
+
+
+.navbar-container {
+    width: 100%;
+    padding-block: 0.7rem;
+    margin-bottom: 2rem;
+
+    margin-top: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #FFFBDA;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.navbar-container .logo img {
+    width: 300px;
+}
+
+
+.navbar-container ul {
+    padding-left: 0;
+    
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+    margin-right: 2rem;
+}
+
+
+nav li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: black;
+
+    transition: all 0.2s ease-in-out;
+}
+
+
+nav li a:hover {
+    background-color: #2b4743;
+    color: white;
+}
+
+.active {
+  background-color: #2b4743; /* Warna yang sama saat section aktif */
+}
+
+
+nav li {
+    list-style-type: none;
+}
+
+
+/* MAIN & SECTION 1*/
+
+
+main {
+    padding-inline: 3rem;
+    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 20px;
+
+    margin: 2rem;
+}
+
+#section-1 {
+    display: flex;
+    gap: 2rem;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+article {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-inline: 0.5rem; 
+    margin-block: 2rem;
+}
+
+
+article .title {
+    font-size: 3rem;
+    margin: 0;
+}
+
+
+article p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+aside {
+    flex: 1;
+    padding-inline: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+aside figure {
+    display: flex;
+    justify-content: center;
+}
+
+
+aside figure img {
+    width: 300px;
+}
+
+
+.line {
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+
+    background-color: #F6995C;
+}
+
+
+figcaption {
+    margin-top: 0.5rem;
+}
+
+
+#section-2 {
+    display: flex;
+
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+#section-2 table {
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#section-2 table th, td{
+    padding-inline: 25px;
+    padding-block: 5px;    
+}
+
+
+table th {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+
+table td {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+/* SECTION 3 */
+
+.section-2 {
+    width: 100%;
+    display: flex;
+    background-color: #FFFBDA;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+
+    font-size: 1.3rem;
+
+    scroll-margin-top: 140px;
+}
+
+
+
+#section-3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+
+
+.container {
+    width: 49%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+    padding-inline: 2rem;
+    padding-block: 0.5rem 2rem;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;  
+}
+
+.container-button {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+
+    gap: 2rem;
+}
+
+.container-button p {
+    font-weight: 700;
+    color: red;
+}
+
+
+button {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding-inline: 10px;
+    padding-block: 2px;
+
+    width: fit-content;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+
+button:hover {
+    background-color: #F6995C;
+}
+
+
+button img {
+    width: 40px;
+}
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    background-color: #FFFBDA; 
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons a {
+    color: #51829B;
+    font-size: 24px; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: white; /* Warna berubah saat di-hover */
+}
+
+footer p {
+    font-weight: 700;
+}
+
+
+@media screen and (max-width:1100px) {
+    
+    #section-1 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container {
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width:950px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (max-width:950px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (max-width:650px) {
+    ul .x {
+        display: none;
+    }
+
+    logo .img {
+        width: 90%;
+    }
+
+    #section-2 table th, td{
+    padding-inline: 18px;
+    padding-block: 5px;    
+    }
+
+
+    table th {
+    font-size: 1.4rem;
+    font-weight: 600;
+    }
+
+
+    table td {
+    font-size: 0.8rem;
+    font-weight: 500;
+    }
+
+}
+
+
+@media screen and (max-width:480px) {
+
+    article .title {
+    font-size: 2rem;
+    margin: 0;
+    }
+
+
+    article p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    }
+
+    
+    aside figure img {
+    width: 100%;
+    }
+
+
+
+    #section-2 table th, td{
+    padding-inline: 10px;
+    padding-block: 5px;    
+    }
+
+
+    table th {
+    font-size: 1.1rem;
+    font-weight: 600;
+    }
+
+
+    table td {
+    font-size: 0.6rem;
+    font-weight: 500;
+    }
+
+
+    figcaption {
+        display: flex;
+        flex-wrap: wrap;
+
+        width: 100%;
+        font-size: 0.45rem;
+        justify-content: center;
+    }
+
+
+    .section-2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+
+    .container {
+        padding: 20px;
+        width: 100%;
+    }
+
+
+    .container h1 {
+        font-size: 1.6rem;
+    }
+
+
+    .container p {
+        font-size: 1.5rem;
+    }
+
+
+    .container-button p {
+        font-size: 1rem;
+    }
+
+}
+
+
+
+/* SECTION KEPENGURUSAN */
+
+#section-4 {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 7rem;
+
+    scroll-margin-top: 140px;
+}
+
+
+#section-4 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.box-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+
+    background-color: #2b4743;
+    color: white;
+    border-radius: 20px;
+
+    margin-bottom: 3rem;
+    padding: 10px;
+
+    text-align: center;
+}
+
+
+#section-4 div figure img {
+    width: 250px;
+}
+
+
+#section-4 div .line {
+    width: 100%;
+
+    background-color: #51829B;
+}
+
+
+#section-4 .caption {
+    text-align: left;
+
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+.figure-ketum {
+   display: flex;
+   flex-direction: column;
+
+   align-items: center;
+   margin-bottom: 1rem;
+
+   box-shadow: 0px 0px 2px #51829B;
+   border-radius: 30px;
+   padding: 10px;
+   padding-inline: 60px;
+   padding-top: 10px;
+}
+
+
+.sekum-bendum {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+
+    gap: 0;
+
+    margin-top: 1rem;
+}
+
+
+.figure-sekum {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+    align-items: center;
+
+    box-shadow: 0px 0px 2px #51829B;
+    border-radius: 30px;
+    padding: 10px;
+    padding-inline: 40px;
+    padding-top: 10px;
+}
+
+
+
+.figure-bendum {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+    align-items: center;
+
+    box-shadow: 0px 0px 2px #51829B;
+    border-radius: 30px;
+    padding: 10px;
+    padding-inline: 40px;
+    padding-top: 10px;
+
+}
+
+
+/* BIDANG KEPENGURUSAN */
+
+.kepengurusan {
+    display: flex;
+
+    width: 100%;
+
+    margin-top: 3rem;
+
+    gap: 20px;
+}
+
+
+
+.kepengurusan figure {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+    align-items: center;
+
+    box-shadow: 0px 0px 2px #51829B;
+    border-radius: 30px;
+    padding: 10px;
+    padding-inline: 40px;
+    padding-top: 10px;
+
+    width: 100%;
+
+    margin: 0;
+}
+
+
+
+figure .line-2 {
+    width: 100%;
+    background-color: #51829B;
+    height: 3px;
+}
+
+
+
+/* PEENDIDIKAN */
+
+.pendidikan {
+    display: flex;
+
+    width: 100%;
+
+    margin-top: 3rem;
+    gap: 20px;
+}
+
+
+
+.pendidikan figure {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+    align-items: center;
+
+    box-shadow: 0px 0px 2px #51829B;
+    border-radius: 30px;
+    padding: 10px;
+    padding-inline: 40px;
+    padding-top: 10px;
+
+    width: 100%;
+
+    margin: 0;
+}
+
+
+
+figure .line-2 {
+    width: 100%;
+    background-color: #51829B;
+    height: 3px;
+}
+
+
+.caption-bidang {
+    font-size: 1rem;
+
+    margin-top: 7rem;
+    
+    box-shadow: 0px 0px 2px #51829B;
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px;
+    width: 100%;
+
+    background-color: #51829b36;
+    text-align: center;
+}
+
+.caption-bidang h1 {
+    margin-top: 0;
+}
+
+
+
+@media screen and (max-width:1152px) {
+    .kepengurusan {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pendidikan {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sekum-bendum {
+        flex-direction: column;
+       
+    }
+
+
+    .ketum {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .figure-ketum {
+        width: 80%;
+    }
+
+    .figure-sekum {
+        width: 80%;
+    }
+
+    .figure-bendum {
+      width: 80%;
+    }
+
+    .kepengurusan figure {
+        width: 80%;
+    }
+
+    .pendidikan figure {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width:753px) {
+    .kepengurusan {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pendidikan {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sekum-bendum {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+
+        gap: 20px;
+        margin-top: 15px;
+    }
+
+
+    .ketum {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .figure-ketum {
+        width: 95%;
+        padding-inline: 40px;
+    }
+
+    .figure-sekum {
+        width: 90%;
+        margin: 0;
+    }
+
+    .figure-bendum {
+      width: 90%;
+      margin: 0;
+    }
+
+    .kepengurusan figure {
+        width: 90%;
+    }
+
+    .pendidikan figure {
+        width: 90%;
+    }
+
+    #section-4 h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width:460px) {
+   
+    #section-4 div figure img {
+    width: 210px;
+    }
+
+    .kepengurusan figure {
+        padding: 19px;
+    }
+
+    .caption h2 {
+        font-size: 1.5rem;
+    }
+
+    .caption h4 {
+        font-size: 1rem;
+    }
+
+    .caption-bidang {
+        margin-top: 3rem;
+        font-size: 0.8rem;
+    }
+
+    .container {
+        padding-bottom: 30px;
+    }
+
+    #section-4 {
+        margin-top: 50px;   
+    }
+
+    .box-1 {
+        margin-bottom: 20px;
+    }
+}   
+
+
+@media screen and (max-width:430px) {
+    #section-4 div figure img {
+    width: 200px;
+    }
+
+     .caption h2 {
+        font-size: 1.3rem;
+    }
+
+    .caption h4 {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media screen and (max-width:400px) {
+    .figure-ketum {
+        width: 100%;
+        padding-inline: 40px;
+    }
+
+    .figure-sekum {
+        width: 100%;
+        margin: 0;
+    }
+
+    .figure-bendum {
+      width: 100%;
+      margin: 0;
+    }
+
+    .kepengurusan figure {
+        width: 100%;
+    }
+
+    .pendidikan figure {
+        width: 100%;
+    }
+
+    #section-4 h1 {
+        font-size: 1.7rem;
+    }
+}
