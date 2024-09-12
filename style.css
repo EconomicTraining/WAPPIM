@@ -438,7 +438,7 @@ footer p {
     }
 
     .navbar-container .logo img {
-        width: 200px;
+        width: 100px;
     }
 
 
@@ -854,7 +854,7 @@ figure .line-2 {
     }
 
     .navbar-container .logo img {
-        width: 200px;
+        width: 170px;
     }
 }
 
@@ -947,20 +947,20 @@ figure .line-2 {
     }
 
     .navbar-container .logo img {
-    width: 180px;
+    width: 140px;
     }
 }
 
 
 @media screen and (max-width:377px) {
     .navbar-container .logo img{
-        width: 150px;
+        width: 125px;
     }
 }
 
-@media screen and (max-width:352px) {
+@media screen and (max-width:362px) {
     .navbar-container .logo img{
-        width: 120px;
+        width: 110px;
     }
 }
 
